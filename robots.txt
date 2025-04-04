@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /private/
-Sitemap: https://elearnary.github.io/sitemap.xml
+Sitemap: https://elearnary.github.io/index/sitemap.xml
