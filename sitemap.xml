@@ -6,17 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://elearnary.github.io/index/</loc>
+  <loc>https://elearnary.netlify.app</loc>
   <lastmod>2025-04-04T06:05:49+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://elearnary.github.io/index/strength-training.html</loc>
+  <loc>https://elearnary.netlify.app/strength-training.html</loc>
   <lastmod>2025-04-04T06:05:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://elearnary.github.io/index/privacy-policy.html</loc>
+  <loc>https://elearnary.netlify.app/privacy-policy.html</loc>
   <lastmod>2025-04-04T06:05:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
