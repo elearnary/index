@@ -168,7 +168,7 @@ main, aside {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.article h1 {
+.article h1, h2 {
     color: #1a1a1a;
     margin-bottom: 15px;
     font-size: 26px;
