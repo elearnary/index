@@ -73,6 +73,44 @@ main, aside {
     height: 2px;
     background-color: #4cd964;
 }
+.widget p {
+    margin-bottom: 15px;
+    color: #555;
+}
+.widget .categ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.widget .categ a {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+.widget form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.widget form input {
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.widget form buttom {
+    background: #4cd964;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 .widget ul {
     list-style: none;
 }
@@ -202,7 +240,7 @@ main, aside {
     margin-top: 25px;
     border: none;
 }
-.explore:hover {
+.article .explore:hover {
     background-color: #3cd853;
 }
 
@@ -274,6 +312,10 @@ footer {
     text-align: center;
     color: #bbb;
     font-size: 14px;
+}
+.copyright a {
+    text-decoration: none;
+    color: #4cd964;
 }
 
 /* Library styles */
