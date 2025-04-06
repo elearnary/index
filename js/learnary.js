@@ -88,10 +88,57 @@ function populateClasses() {
 // Call the populateClasses function when the page loads
 populateClasses();
 
-document.getElementById('explore').addEventListener('click' ,function(){
-    var articles = document.querySelectorAll('.article');
-    document.getElementById('bookContainer').style.display = 'block';
-    articles.forEach(function (artic){
+var articles = document.querySelectorAll('.article');
+var bcont = document.getElementById('bookContainer');
+var exploreBtn = document.getElementById('explore');
+
+// Store the initial state
+
+var initialState = {
+  articlesVisible: true,
+  bcontVisible: false
+};
+
+
+
+// Push initial state to history
+
+history.replaceState(initialState, "", window.location.pathname);
+
+exploreBtn.addEventListener('click', function() {
+  // Show bookContainer and hide articles
+  bcont.style.display = 'block';
+  articles.forEach(function(artic) {
+    artic.style.display = 'none';
+  });
+
+  // Push new state to history
+
+  history.pushState({
+    articlesVisible: false,
+    bcontVisible: true
+  }, "", "");
+});
+
+window.addEventListener("popstate", function(e) {
+  if (e.state) {
+    // If we have state data (our custom navigation)
+    if (e.state.bcontVisible) {
+      bcont.style.display = 'block';
+      articles.forEach(function(artic) {
         artic.style.display = 'none';
+      });
+    } else {
+      bcont.style.display = 'none';
+      articles.forEach(function(artic) {
+        artic.style.display = 'block';
+      });
+    }
+  } else {
+    // If no state data (user navigated to our page fresh)
+    bcont.style.display = 'none';
+    articles.forEach(function(artic) {
+      artic.style.display = 'block';
     });
+  }
 });
