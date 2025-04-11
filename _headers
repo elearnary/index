@@ -1,0 +1,32 @@
+/index.html
+  Content-Type: text/html; charset=UTF-8
+  X-Robots-Tag: all
+
+/strength-training.html
+  Content-Type: text/html; charset=UTF-8
+  X-Robots-Tag: all
+
+/privacy-policy.html
+  Content-Type: text/html; charset=UTF-8
+  X-Robots-Tag: all
+
+/sitemap.xml
+  Content-Type: application/xml
+  X-Robots-Tag: all
+
+/robots.txt
+  Content-Type: text/plain
+  X-Robots-Tag: all
+
+/google97b28e6edb14cf05.html
+  Content-Type: text/html; charset=UTF-8
+  X-Robots-Tag: noindex, nofollow
+
+/css/*
+  Content-Type: text/css
+
+/js/*
+  Content-Type: application/javascript
+
+/assets/*
+  X-Robots-Tag: all
